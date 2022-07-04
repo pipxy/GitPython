@@ -103,3 +103,22 @@ minutes_passed_dec = float(ore*60 + minuti + (secondi/100))
 print("Sono trascorsi ", minutes_passed , " minuti")
 print("oppure")
 print("Sono trascorsi ", minutes_passed_dec, "minuti (calcolati in base 10 e con 2 cifre decimali")
+
+##  9- Ask the user for the three coefficients a, b, and c of a quadratic equation, and find its solutions x.
+##     Hint: to use the square root, we need the extra module software math.
+import math
+a = input("Inserisci un numero a: ")
+b = input("Inserisci un numero b: ")
+c = input("Inserisci un numero c: ")
+a = float(a) ; b = float(b) ; c = float(c)
+
+delta = b**2 - 4*a*c
+root = math.sqrt(delta)
+x1 = (-b + root)/2*a
+x2 = (-b - root)/2*a
+print(x1, x2)
+
+
+## 10- Given 3 integer numbers, check if they can be the lengths of the sides of a right triangle.
+##     (Hint: Apply the Pythagorean theorem.)
+

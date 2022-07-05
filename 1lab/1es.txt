@@ -1,0 +1,4 @@
+## 1- Print your name and surname
+print("====== ESERCIZIO 1 =====")
+print("Name")
+print("Surname")

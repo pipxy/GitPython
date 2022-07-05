@@ -1,0 +1,38 @@
+## 10- Given 3 integer numbers, check if they can be the lengths of the sides of a right triangle.
+##     (Hint: Apply the Pythagorean theorem.)
+
+# The sides of a right triangle must have lengths that are coherent with their angles.
+# A right triangle has a 90degrees angle, so the other two angles must be a1+a2 = 90°
+# This leads to the Pitagora theorem: it states that the area of the square with side equal to the side
+# in front of the right angle must be equal to the sum of the areas of the two squares with sides equal to
+# the other sides of the triangle.
+
+# I want the script to:
+# - take side a, b and c length
+# - compute the areas of the 3 triangles
+# - spot the ipotenusa, which is the longest side
+# - compare the area of the ipotenusa-square  with the sum of the other two side-square
+# - if those are equal, then TRUE. Else FALSE
+
+import numpy
+
+print("You will be asked to provide the length of 3 sides of a triangle ...")
+a = int(input("Length of side 1 > "))
+b = int(input("Length of side 2 > "))
+c = int(input("Length of side 3 > "))
+
+print(a,b,c)
+
+# If a side is longer than the others, than it is the Ipotenusa
+
+ipo = max(a,b,c)
+lati = numpy.array([a,b,c])
+lati.sort()
+cateto1 = lati[1]
+cateto2 = lati[2]
+
+if ipo**2 == cateto1**2 + cateto2**2:
+  print("These integers could be sides of a right triangle")
+else:
+  print("These integers cannot be sides of a right triangle")
+print("Exit the exercise")

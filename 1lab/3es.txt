@@ -1,0 +1,12 @@
+## 3- The same as 2., but ask the user for the day of December in the interval 
+##    [1,31], and print "ERROR" if the number is not include in the interval 
+print("====== ESERCIZIO 3 =====")
+
+daysDec = int(input("Day of Dec: "))
+if daysDec < 1 or daysDec > 31:
+  print("ERROR")
+else:
+  days30 = 4 * 30
+  days31 = 6 * 31
+  daysFeb = 28
+  print("days from Jan 1st to Dec 13th:", days30 + days31 + daysDec + daysFeb)

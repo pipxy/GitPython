@@ -1,0 +1,9 @@
+## 2- Compute the number of days from Jan 1st in the year, given the date 
+##    "Dec 13th" (Apr/Jun/Sep/Nov = 30 days, Jan/Mar/May/Jul/Aug/Oct/Dec = 31 days)
+print("====== ESERCIZIO 2 =====")
+
+days30 = 4 * 30
+days31 = 6 * 31
+daysDec = 13
+daysFeb = 28
+print("days from Jan 1st to Dec 13th:", days30 + days31 + daysDec + daysFeb)

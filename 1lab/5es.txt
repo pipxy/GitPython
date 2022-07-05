@@ -1,0 +1,12 @@
+## 5- Write a program that asks for a radius (in cm)
+##    and prints both the area and the perimeter of a circle.
+print("====== ESERCIZIO 5 =====")
+
+import math
+
+radius = input("Write the radius for a circle (in cm)  ")
+radius = int(radius)
+area_cir = math.pi * radius**2
+per_cir = 2 * radius * math.pi
+print("The area of the circle is: ", area_cir)
+print("The perimeter of the circle is: ", per_cir)

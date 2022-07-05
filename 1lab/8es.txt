@@ -1,0 +1,15 @@
+## 8- The same as exercise 7, but computes the total number of minutes
+##    from the beginning of the days as a real (float) number
+##    (ex: 2:23:3 corresponds to 143.05 minutes).
+
+print("====== ESERCIZIO 8 =====")
+
+orario = input("Inserisci ore, minuti e secondi separati da uno spazio (ex. 4 32 56 sono quattro ore, 32 minuti e 56 secondi) ")
+print("Hai inserito ", orario)
+ora = orario.split(" ")
+ore = int(ora[0]) ; minuti = int(ora[1]) ; secondi = int(ora[2])
+minutes_passed = float(ore*60 + minuti + (secondi//60) + (secondi % 60))
+minutes_passed_dec = float(ore*60 + minuti + (secondi/100))
+print("Sono trascorsi ", minutes_passed , " minuti")
+print("oppure")
+print("Sono trascorsi ", minutes_passed_dec, "minuti (calcolati in base 10 e con 2 cifre decimali")

@@ -1,0 +1,10 @@
+## 4- Write a program that read two integer inputs (the lenghts of two segments),
+##    and computes (and prints) both the area and perimeter of a rectangle (in m2).
+print("====== ESERCIZIO 4 =====")
+a = input("Write an integer "    )
+b = input("Write an another integer "    )
+a = int(a) ; b = int(b)
+area = a*b
+perimeter = 2*a + 2*b
+print("The area of the rectangle is: ", area)
+print("The perimeter of the rectangle is: ", perimeter)

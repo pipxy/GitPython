@@ -1,0 +1,21 @@
+## 6- Suppose that the cover price of a book is EUR 15.90,
+##    but a bookstore gets a x% discount. Shipping costs EUR 3 
+##    for the first copy and 75 cents for each additional copy. 
+##    Ask the user for typing the discount percent and the number
+##    of copies to ship. The program has to return on the screen
+##    the total cost. Print also the cost with a VAT of 23%.a
+print("====== ESERCIZIO 6 =====")
+
+book_in_price = 15.90
+first_sped = 3
+altre_sped = 0.75
+VAT = 0.23
+print("The price of the book is ", book_in_price)
+discount = input("Write a discount percentage  ") 
+discount = int(discount)
+copies = input("How many copies do you want?   ")
+copies = int(copies)
+book_fin_price = book_in_price - book_in_price * (discount/100)
+final_price = book_fin_price*copies + first_sped + altre_sped*(copies - 1)
+print("The total cost (no VAT) is: ", final_price)
+print("The total cost is ", final_price + (final_price*VAT))

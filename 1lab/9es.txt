@@ -1,0 +1,13 @@
+#  9- Ask the user for the three coefficients a, b, and c of a quadratic equation, and find its solutions x.
+##     Hint: to use the square root, we need the extra module software math.
+import math
+a = input("Inserisci un numero a: ")
+b = input("Inserisci un numero b: ")
+c = input("Inserisci un numero c: ")
+a = float(a) ; b = float(b) ; c = float(c)
+
+delta = b**2 - 4*a*c
+root = math.sqrt(delta)
+x1 = (-b + root)/2*a
+x2 = (-b - root)/2*a
+print(x1, x2)

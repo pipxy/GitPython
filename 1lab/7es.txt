@@ -1,0 +1,13 @@
+## 7- Given 3 integer numbers, whose meanings are current time in hour,
+##    minutes, and seconds, compute how many seconds have passed from 
+##    the beginning of the day. Ask the user for the three numbers and
+##    print the results on the screen. 
+
+print("====== ESERCIZIO 7 =====")
+
+orario = input("Inserisci ore, minuti e secondi separati da uno spazio (ex. 4 32 56 sono quattro ore, 32 minuti e 56 secondi) ")
+print("Hai inserito ", orario)
+ora = orario.split(" ")
+ore = int(ora[0]) ; minuti = int(ora[1]) ; secondi = int(ora[2])
+second_passed = secondi + minuti*60 + ore*60*60
+print("Il numero di secondi trascorsi è ", second_passed)

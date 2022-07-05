@@ -156,4 +156,4 @@ if ipo**2 == cateto1**2 + cateto2**2:
   print("These integers could be sides of a right triangle")
 else:
   print("These integers cannot be sides of a right triangle")
-print("Exit the exercise")
+print("Esercizio finito")
